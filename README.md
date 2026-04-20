@@ -1,3 +1,6 @@
+
+
+
 # HR Workflow Designer
 
 A professional-grade workflow design and simulation tool for HR processes, built with React, React Flow, and Tailwind CSS. This application provides an intuitive visual interface for building, configuring, and testing complex workflow automations.
@@ -9,6 +12,9 @@ Experience the full workflow designer with:
 - Drag & drop nodes
 - AI workflow generation
 - Simulation & validation
+
+https://github.com/user-attachments/assets/c812c52a-59ab-40a2-b62e-92c840e02e31
+  
   
 ![HR Workflow Designer](./src/imports/image.png)
 <img width="1600" height="866" alt="image" src="https://github.com/user-attachments/assets/dd314288-2860-40e0-af6f-ac57b3154706" />
