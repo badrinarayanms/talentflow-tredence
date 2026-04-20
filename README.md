@@ -245,6 +245,31 @@ Interactive execution testing:
 - Error handling for malformed data
 - Preserves visual layout (positions)
 
+### 8. AI-Powered Workflow Generation
+
+Integrated with Google's Gemini API to enable intelligent workflow creation.
+
+- **Prompt-based generation**: Users can describe workflows in natural language (e.g., "employee onboarding process")
+- **Context-aware updates**: AI can modify existing workflows instead of always creating new ones
+- **Automatic node creation**: Generates valid node structures (Start → Task → Approval → Automated → End)
+- **Edge connections**: Automatically links nodes in logical sequence
+- **Smart defaults**:
+  - Task nodes get default assignee
+  - Approval nodes include approver role & threshold
+  - Automated steps include API action placeholders
+
+**Workflow Generation Flow:**
+1. User enters prompt in top bar input
+2. Current workflow (if any) is sent as context
+3. Gemini API returns structured JSON
+4. JSON is parsed and converted to React Flow nodes
+5. Canvas updates instantly with generated workflow
+
+**Example Prompt:**
+Create a leave approval workflow with manager approval and HR verification
+**Generated Output:**
+- Start → Submit Request → Manager Approval → HR Verification → End
+
 ## 🧠 Design Decisions & Rationale
 
 ### 1. **React Flow over Custom Canvas**
